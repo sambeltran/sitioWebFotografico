@@ -1,0 +1,37 @@
+#galeriaPaisajes{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#galeriaPaisajes div{
+	width: 33.33%;
+	background-color: #d5c75f;
+}
+[src^=imagenes]{
+	width: 90%;
+	margin-left: 5.5%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+#foto1 img{
+	box-shadow: none;
+	filter:blur(10px);
+}
+#foto2 img,#foto4 img,#foto6 img{
+	filter: grayscale(100%);
+}
+
+#foto3 img{
+	filter: sepia(90%);
+}
+
+
+@media (max-width: 899px){
+
+	#galeriaPaisajes div{
+		width: 100%;
+		background-color: #d5c75f;
+	}
+}
